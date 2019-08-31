@@ -1,35 +1,43 @@
 body {
     width: 100%;
-    line-height: 1;
     margin-left: 0;
     margin-right: 0;
     font-family: sans-serif;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 /*** Header Desktop ***/
 .desktop {
     display: flex;
+    /*flex-flow: row wrap;*/
     padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    width: 100%;
+    /*padding-right: 1.5rem;
+    margin: 0;
+    /*width: 96%;*/
     height: 4rem;
     background-color: white;
-/*    align-items: center;
-    justify-content: center; */
 }
 
 .desktop a {
     height: 2rem;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
 .desktop nav {
-    width: 50rem;
-    margin-left: 38.5rem;
+    margin-left: 39rem;
+    margin-right: 0;
+    
 }
 
 .desktop nav ul {
     display: inline-flex;
+    align-self:flex-end;
     list-style: none;
     padding: 0;
 }
@@ -40,50 +48,166 @@ body {
 }
 /****************************/
 
+.main {
+    background-color: white;
+    width: 100%;
+}
+
 /*** First Section: Presentation ***/
 .flex-container {
     display: flex;
     background-color: lightgrey;
+    width: 100%;
 }
 
 .flex-container img {
-    width: 45rem;
-    margin: 2rem 1.5rem;
+    width: 41rem;
+    margin: 32px 24px;  /*2rem 1.5rem;*/
+    padding:0;
 }
 
 .banner img {
     height: 30rem;
 }
 
-.flex-container .presentation {
-    width: 20rem;
-    background-color: :gray;
-    padding: 9rem 1.5rem;   
+.flex-container #presentation {
+    width: 35%;
+    padding: 7rem 1.5rem;   
     font-weight: 150;
+    margin-right: 12rem;
 }
+
 
 h1 {
-    color: #252323bd;
-    font-weight: 800;
+    color: #211e1ebd;
+    font-weight: 1000;
+    font-size: 2rem;
 }
 
-h3 {
+h3, p {
     color: #635d5dc0;
+    font-weight: 800;
+    font-size: 1.1rem;
+    position: left;
 }
 
-button{
-    font-size: 0.8rem;
+#presentation button{
+    font-size: 1rem;
     font-weight: bold;
     color: rgba(206, 199, 199, 0.87);
     background-color: rgb(59, 56, 56);
-    width: 16rem;
-    height: 2rem;
-    padding: .5rem;
+    width: 19rem;
+    height: 2.5rem;
+    /*padding: .5rem;*/
 }
 /*****************************************/
 
-/*** Second Section: Practicing ***/
+/*** Second Section: Practicing: ***/
+/* sheme= flex-container practicing [flex-container left-part [img, h1, p, em] , 
+                    flex-container right-part [div ruban X3 [img, 
+                                flex-container div content [h2, p, a]]] ]*/
+
+.flex-container .practicing {
+    display: flex;
+    flex-direction: row;
+    border-color: grey;
+    width: 30%;
+}
+
+.left-part {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-top: .5rem;
+    padding-top: 1rem;
+    padding-bottom: 32px;
+}
+
 .practicing img {
-    height: 24rem;
+    height: 26rem;
+    /*margin-bottom: .5rem;*/
+}
+
+.left-part h1, p {
+    width: 45rem;
+    margin: 2rem 1.5rem;
+}
+
+.left-part span {
+    font-size: .8rem;
+    margin: 1.5rem;
+    padding-bottom: 32px;;
+    margin-bottom: 52px;
+}
+
+.flex-container .right-part {
+    display: flex;
+    flex-direction: column;
+    width:35%;
+    margin-top: .5rem;
+    padding-top: 2rem;
+    background-color: white;
+    border-right-color: gray;
+}
+
+.ruban {
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+    height: 30%;
+    font-weight: 150;
+}
+
+.flex-container .right-part img {
+    width: 35%;
+    margin: 1rem;
+    height: 150px;
+    padding: 1rem;
+}
+
+.content {
+    display: flex;
+    flex-flow: column wrap;
+    width: 65%;
+    background-color: white;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.Oli {
+    background-color: lightgrey;
+}
+.content h2 {
+    color: #635d5dc0;
+    font-weight: 700;
+    text-align: left;
+    padding: 0;
+}
+
+.ruban .content p {
+    color: #968f8ff5;
+    font-size: 1rem;
+    text-align: left;
+    padding: 0 rem;
+    margin: 0;
+}
+
+.right-part a{
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(135, 211, 236);
+    width: 16rem;
+    height: 2rem;
+    margin: 0;
+    padding: 0;
+}
 
 /**********************************/
+
+#learn {
+    display: block;
+    width: 100%;
+    padding: 32px;
+    margin: 32px;
+    background-color: rgba(226, 222, 222, 0.863);
+}

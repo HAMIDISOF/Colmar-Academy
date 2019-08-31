@@ -1,0 +1,218 @@
+body {
+    width: 1500px;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 32px 24px;
+}
+
+/*** Header Desktop ***/
+.desktop {
+    height: 64px;
+    background-color: white;
+    align-items: baseline;
+    width: 96%;
+}
+
+.main {
+    background-color: white;
+    width: 100%;
+}
+
+.flex-container {
+    display: flex;
+    margin: 32px 24px; 
+}
+
+.column-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 34%;
+}
+
+#logo {
+    height: 32px;
+}
+
+.desktop nav ul {
+    display: inline-flex;
+    align-self:flex-end;
+    list-style: none;
+    margin-right:  24px;
+    width: auto;
+}
+
+.desktop li {
+    margin: .5rem;
+    text-decoration: none;
+}
+
+
+.media-left {
+    width: 41rem;
+}
+
+
+h1 {
+    color: #211e1ebd;
+    font-weight: 1000;
+    font-size: 2rem;
+}
+
+h3, p {
+    color: #635d5dc0;
+    font-weight: 800;
+    font-size: 1.1rem;
+    position: left;
+}
+
+/*** First Section: Presentation ***/
+.banner {
+    background-color: lightgrey;
+    padding: 32px 24px;
+}
+
+.banner .media-left {
+    height: 28rem;
+}
+
+
+.flex-container #presentation {
+    font-weight: 150;
+    margin-left: 24px;
+}
+
+#presentation button{
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgba(206, 199, 199, 0.87);
+    background-color: rgb(59, 56, 56);
+    width: 19rem;
+    height: 2.5rem;
+}
+/*****************************************/
+
+/*** Second Section: Practicing: ***/
+/* sheme= flex-container practicing:
+ [flex-container left-part          flex-container column-right (= div ruban X3)
+        img                           ruban : img       flex-container content:h2
+        h1                                                                      p
+                                                                                a
+        p                             ruban : img       flex-container content:h2
+                                                                                p
+        em                                                                      a
+                                      ruban : img       flex-container content:h2
+                                                                                p
+                                                                                a
+*/
+      
+.practicing {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    width: 96%;
+}
+
+.left-part {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 24px;
+}
+
+.column-right {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 24px;
+}
+
+
+.left-part media-left {
+    height: 14rem;
+}
+
+.left-part h1, p {
+    width: 40rem;
+    margin: 24px 0;
+
+}
+
+.left-part span {
+    font-size: .8rem;   
+    margin-bottom: 32px;
+}
+
+.ruban {
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+    align-items: space-between;
+    width: 600px;  
+    height: 28%;
+    padding: 8px;
+    background-color: white;
+    font-weight: 150;
+    margin: 0
+}
+
+.Oli {
+    background-color: lightgrey;
+    padding-right: 80px;
+}
+
+.content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 65%;
+    padding: 0;
+    margin-left: 24px;
+    margin-top: 0;
+}
+
+
+.content h2 {
+    color: #635d5dc0;
+    font-weight: 700;
+    text-align: left;
+    padding: 0;
+}
+
+.ruban .content p {
+    color: #968f8ff5;
+    font-size: 1rem;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.right-part a{
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(135, 211, 236);
+    width: 16rem;
+    height: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+/**********************************/
+
+#learn {
+    display: block;
+    width: 100%;
+    padding: 32px;
+    margin: 32px;
+    background-color: rgba(226, 222, 222, 0.863);
+}
