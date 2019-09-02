@@ -87,6 +87,7 @@ h3, p {
     height: 28rem;
     margin-top: 32px;
     margin-bottom: 32px;
+    margin-left: 24px;
 }
 
 
@@ -121,8 +122,7 @@ h3, p {
         em                                                                      a
                                       ruban : img       flex-container content:h2
                                                                                 p
-                                                                                a
-*/
+                                                                                a *****/
       
 .practicing {
     background-color: rgba(225, 225, 225, 0.51);
@@ -138,7 +138,7 @@ h3, p {
     display: flex;
     flex-direction: column;
     width: 60%;
-    margin-left: 16px;
+    margin-left: 24px;
 }
 
 .column-right {
@@ -172,7 +172,6 @@ h3, p {
     width: 620px;  
     height: 28%;
     padding: 8px;
-    
     font-weight: 150;
     margin: 0
 }
@@ -218,7 +217,7 @@ h3, p {
     padding: 0;
 }
 
-/**********************************/
+/****** Starting learning section *************/
 
 #learn {
     height: 1225px;
@@ -277,6 +276,96 @@ h3, p {
     font-size: 20px;
     font-weight: 500;
     color: rgb(156, 151, 151);
-    padding: 0;
-    
+    padding: 0;   
 }
+
+/************** Thesis exhibit ****************/
+.thesis {
+    width: 100%;
+    height: 750px;
+    padding-top: 32px;
+    margin: 0 24px 0 0;
+    background-color: rgba(225, 225, 225, 0.51);
+    border-color: lightgrey;
+}
+
+.thesis h1 {
+    text-align: center;
+}
+
+.thesis h2 {
+    color: #555151e0;
+    margin-top: 24px;
+}
+
+.thesis p {
+    margin: 0;
+    color: #968f8ff5;
+}
+
+.exhibit {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 98%;
+    margin: 0;
+    padding-left: 24px;
+    border-color: lightgrey;
+    text-align: flex-start;
+}
+
+
+.left-part media-video {
+    margin: 0;
+    padding: 0;
+}
+
+.exhibit .ruban {
+    margin-left: 0;
+}
+
+.exhibit .ruban img {
+    width: 150px;
+    height: 150px;
+}
+
+#fisma {
+    width: 400px;
+    clear: both;
+    margin-left: 16px;
+}
+
+#now {
+    width: 350px;
+    clear: both;
+    margin-left: 16px;
+}
+
+#detail {
+    width: 335px;
+}
+
+footer {
+    width: 100%;
+    height: 104px;
+    margin: 0;
+    display: inline-block;         
+    align-items: baseline;
+    background-color: rgba(225, 225, 225, 0.51);
+    border-top-color: #3b3737f5;
+}
+    #rights {
+        margin: 0;
+        display: inline-block;
+        text-align: left;
+        font-size: 16px;
+        padding: 48px 32px 24px 16px ;
+    }
+
+    #terms {
+        margin: 0;
+        display: inline-block;
+        text-align: right;
+        font-size: 16px;
+        
+    }
