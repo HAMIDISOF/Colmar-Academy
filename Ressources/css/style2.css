@@ -129,8 +129,10 @@ h3, p {
     display: flex;
     flex-direction: row;
     width: 98%;
+    height: 1070px;
     margin: 0;
     padding: 32px 16px;
+    padding-bottom: 0;
     border-color: lightgrey;
 }
 
@@ -139,6 +141,7 @@ h3, p {
     flex-direction: column;
     width: 60%;
     margin-left: 24px;
+    margin-bottom: 0;
 }
 
 .column-right {
@@ -147,6 +150,7 @@ h3, p {
     justify-content: flex-start;
     width: 40%;
     margin-right: 72px;
+    margin-bottom: 0;
 }
 
 
@@ -157,12 +161,10 @@ h3, p {
 .left-part h1, p {
     width: 40rem;
     margin: 32px 0;
-
 }
 
 .left-part span {
     font-size: .8rem;   
-    margin-bottom: 32px;
 }
 
 .ruban {
@@ -178,6 +180,9 @@ h3, p {
 
 .Oli {
     background-color: lightgrey;
+    margin-right: 0;
+    padding-right: 70px;
+    margin-bottom: 0;
 }
 
 .content {
